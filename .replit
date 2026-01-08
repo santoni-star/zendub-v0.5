@@ -1,1 +1,5 @@
 run = "cd server && npm install && node server.js"
+
+[deployment]
+build = ["npm", "install"]
+run = ["npm", "start"]
