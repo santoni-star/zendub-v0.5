@@ -10,7 +10,7 @@ const { getEdgeTTS } = require('./edge-tts');
 const emotionEngine = require('./emotion-engine');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const CACHE_DIR = path.join(__dirname, 'cache');
 
 if (!fs.existsSync(CACHE_DIR)) {
