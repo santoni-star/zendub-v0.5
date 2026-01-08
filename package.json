@@ -1,0 +1,12 @@
+{
+    "name": "zendub-replit-deploy",
+    "version": "0.0.1",
+    "description": "Root package for Replit deployment",
+    "scripts": {
+        "start": "node server/server.js",
+        "postinstall": "cd server && npm install"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT"
+}
