@@ -34,6 +34,10 @@ function getCacheFilename(text, voice, pitch, rate) {
     return path.join(CACHE_DIR, `${hash}.mp3`);
 }
 
+app.get('/', (req, res) => {
+    res.status(200).send('ZenDub Server is Running! 🚀<br>Version: 1.3');
+});
+
 app.post('/tts', async (req, res) => {
     const { text, lang, voiceType, useEmotion, targetDuration } = req.body;
     console.log(`[TTS] Request: ${text.substring(0, 30)}... [${lang}]${targetDuration ? ` (target: ${targetDuration.toFixed(1)}s)` : ''}`);
