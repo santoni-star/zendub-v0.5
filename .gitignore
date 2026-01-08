@@ -1,0 +1,7 @@
+node_modules/
+server/cache/
+server/venv/
+.DS_Store
+*.log
+*.mp3
+__pycache__/
