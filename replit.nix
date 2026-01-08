@@ -1,7 +1,6 @@
 { pkgs }: {
   deps = [
-    pkgs.nodejs-18_x
+    pkgs.nodejs
     pkgs.ffmpeg
-    pkgs.libuuid
   ];
 }
